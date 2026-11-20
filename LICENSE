@@ -1,0 +1,17 @@
+**CHANGELOG.md**
+```markdown
+# Changelog
+
+## 2.1.0
+- Banner dan logo dipindah ke file eksternal (`banner.txt`, `assets/logo.txt`)
+- Fallback internal kalau file aset hilang
+
+## 2.0.0
+- Rilis menu 12 modul
+- Modul Bluetooth popup spam (BLE advertising rotasi nama)
+- Modul MITM (ARP spoof + mitmproxy, mode proxy non-root)
+- Modul broadcast pesan Wi-Fi (captive page + auto redirect)
+- Deteksi root/tsu otomatis per modul
+
+## 1.0.0
+- Kerangka engine intel, web, exploit, android, forensics, remote ops, reporting
