@@ -14,7 +14,7 @@ popup spam, MITM, dan broadcast pesan ke seluruh device sejaringan.
 
 ```bash
 pkg install git python
-git clone https://github.com/<user>/lonewolf-toolkit
+git clone https://github.com/sapammeded/lonewolf
 cd lonewolf-toolkit
 bash install.sh
 python lonewolf.py
