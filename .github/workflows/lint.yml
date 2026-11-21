@@ -7,6 +7,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
-      - run: python -m py_compile lonewolf.py
-      - run: test -s banner.txt
-      - run: test -s assets/logo.txt
+      - name: compile semua file
+        run: python -m compileall -q lonewolf.py lw
+      - name: aset wajib ada
+        run: test -s banner.txt && test -s assets/logo.txt
+      - name: registry & modul valid
+        run: python -c "from lw.core import module_loader as m; m.load_all(); assert m.stats()['total']>=55, m.stats(); assert not m.errors(), m.errors(); print(m.stats())"
+      - name: selftest
+        run: python lonewolf.py selftest --ws ci
