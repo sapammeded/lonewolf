@@ -1,20 +1,12 @@
-<div align="center">
+# LONE WOLF 2026
 
-# LONE WOLF TOOLKIT
-
-Menu toolkit keamanan jaringan & web untuk Termux (Android), berjalan tanpa root.
-
-12 modul dalam satu menu: recon, scanning, vuln assessment, exploitation, cracking,
-social engineering, web hacking, privilege escalation, wireless audit, Bluetooth
-popup spam, MITM, dan broadcast pesan ke seluruh device sejaringan.
-
-</div>
+Framework keamanan ofensif untuk Termux (Android, non-root) dan Linux.
+63 modul dalam 14 kategori, registry dinamis, job/session manager, SQLite
+per-workspace, eksekusi 12 bahasa, dan reporting md/json/html.
 
 ## Instalasi
-
 ```bash
 pkg install git python
-git clone https://github.com/sapammeded/lonewolf
-cd lonewolf-toolkit
+git clone <repo> lonewolf && cd lonewolf
 bash install.sh
-python lonewolf.py
+python3 lonewolf.py
